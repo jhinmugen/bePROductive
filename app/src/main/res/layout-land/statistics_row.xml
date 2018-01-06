@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:scrollbars="none">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none">
+
+        <android.support.constraint.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/timeSpentOnAppLabel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:fontFamily="@font/roboto"
+                android:text="@string/timeSpentonApp"
+                android:textAlignment="center"
+                app:layout_constraintEnd_toEndOf="@+id/mostUsedContent"
+                app:layout_constraintStart_toStartOf="@+id/mostUsedContent"
+                app:layout_constraintTop_toBottomOf="@+id/mostUsedContent" />
+
+            <TextView
+                android:id="@+id/percentageUsageCurrentAppLabel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:fontFamily="@font/roboto"
+                android:text="@string/percentageUsageCurrentAppLabel"
+                android:textAlignment="center"
+                app:layout_constraintEnd_toEndOf="@+id/timeSpentOnAppContent"
+                app:layout_constraintStart_toStartOf="@+id/timeSpentOnAppContent"
+                app:layout_constraintTop_toBottomOf="@+id/timeSpentOnAppContent" />
+
+            <TextView
+                android:id="@+id/timeSpentOnAppContent"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:fontFamily="@font/roboto"
+                app:layout_constraintEnd_toEndOf="@+id/timeSpentOnAppLabel"
+                app:layout_constraintStart_toStartOf="@+id/timeSpentOnAppLabel"
+                app:layout_constraintTop_toBottomOf="@+id/timeSpentOnAppLabel"
+                tools:text="TextView" />
+
+            <TextView
+                android:id="@+id/mostUsedContent"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:fontFamily="@font/roboto"
+                app:layout_constraintEnd_toEndOf="@+id/mostUsedLabel"
+                app:layout_constraintStart_toStartOf="@+id/mostUsedLabel"
+                app:layout_constraintTop_toBottomOf="@+id/mostUsedLabel"
+                tools:text="TextView" />
+
+            <TextView
+                android:id="@+id/leastTimeUsedContent"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/roboto"
+                app:layout_constraintBaseline_toBaselineOf="@+id/mostUsedContent"
+                app:layout_constraintEnd_toEndOf="@+id/leastUsedLabel"
+                app:layout_constraintStart_toStartOf="@+id/leastUsedLabel"
+                tools:text="TextView" />
+
+            <TextView
+                android:id="@+id/totalPercentLabel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/roboto"
+                android:text="@string/totalPercentLabel"
+                android:textAlignment="center"
+                app:layout_constraintBaseline_toBaselineOf="@+id/percentageUsageCurrentAppLabel"
+                app:layout_constraintEnd_toEndOf="@+id/totalTimeSpentOnPhoneContent"
+                app:layout_constraintStart_toStartOf="@+id/totalTimeSpentOnPhoneContent" />
+
+            <TextView
+                android:id="@+id/totalTimeSpentOnPhoneContent"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/roboto"
+                app:layout_constraintBaseline_toBaselineOf="@+id/timeSpentOnAppContent"
+                app:layout_constraintEnd_toEndOf="@+id/totalTimeSpentOnPhoneLabel"
+                app:layout_constraintStart_toStartOf="@+id/totalTimeSpentOnPhoneLabel"
+                tools:text="TextView" />
+
+            <TextView
+                android:id="@+id/totalTimeSpentOnPhoneLabel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/roboto"
+                android:text="@string/totalTimeSpentOnPhoneLabel"
+                app:layout_constraintBaseline_toBaselineOf="@+id/timeSpentOnAppLabel"
+                app:layout_constraintEnd_toEndOf="@+id/leastTimeUsedContent"
+                app:layout_constraintStart_toStartOf="@+id/leastTimeUsedContent" />
+
+            <TextView
+                android:id="@+id/mostUsedLabel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="16dp"
+                android:layout_marginStart="16dp"
+                android:fontFamily="@font/roboto"
+                android:text="@string/mostUsedLabel"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="@+id/guideline2"
+                app:layout_constraintTop_toTopOf="@+id/guideline3" />
+
+            <TextView
+                android:id="@+id/percentageUsageCurrentAppContent"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                android:layout_marginTop="16dp"
+                android:fontFamily="@font/roboto"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="@+id/percentageUsageCurrentAppLabel"
+                app:layout_constraintStart_toStartOf="@+id/percentageUsageCurrentAppLabel"
+                app:layout_constraintTop_toBottomOf="@+id/percentageUsageCurrentAppLabel"
+                tools:text="TextView" />
+
+            <TextView
+                android:id="@+id/leastUsedLabel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="16dp"
+                android:layout_marginStart="16dp"
+                android:fontFamily="@font/roboto"
+                android:text="@string/leastUsedLabel"
+                app:layout_constraintBaseline_toBaselineOf="@+id/mostUsedLabel"
+                app:layout_constraintEnd_toStartOf="@+id/guideline2"
+                app:layout_constraintStart_toStartOf="parent" />
+
+            <TextView
+                android:id="@+id/totalPercentageContent"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/roboto"
+                app:layout_constraintBaseline_toBaselineOf="@+id/percentageUsageCurrentAppContent"
+                app:layout_constraintEnd_toEndOf="@+id/totalPercentLabel"
+                app:layout_constraintStart_toStartOf="@+id/totalPercentLabel"
+                tools:text="TextView" />
+
+            <android.support.constraint.Guideline
+                android:id="@+id/guideline2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintGuide_begin="305dp"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toStartOf="parent" />
+
+            <android.support.constraint.Guideline
+                android:id="@+id/guideline3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                app:layout_constraintGuide_begin="46dp" />
+
+        </android.support.constraint.ConstraintLayout>
+
+    </ScrollView>
+
+</RelativeLayout>

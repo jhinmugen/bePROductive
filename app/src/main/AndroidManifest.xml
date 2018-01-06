@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.example.vspan.beproductive">
+
+    <uses-permission
+        android:name="android.permission.PACKAGE_USAGE_STATS"
+        tools:ignore="ProtectedPermissions" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED"/>
+    <uses-permission android:name="android.permission.ACCESS_NOTIFICATION_POLICY" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name="com.Jhinmugen.vspan.beproductive.MainActivity"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.Jhinmugen.vspan.beproductive.AboutActivity"
+            android:parentActivityName="com.Jhinmugen.vspan.beproductive.MainActivity" />
+        <activity
+            android:name="com.Jhinmugen.vspan.beproductive.ActivityToDo"
+            android:label="To Do List"
+            android:parentActivityName="com.Jhinmugen.vspan.beproductive.MainActivity" />
+        <activity
+            android:name="com.Jhinmugen.vspan.beproductive.CounterActivity"
+            android:label="Working Intervals"
+            android:parentActivityName="com.Jhinmugen.vspan.beproductive.MainActivity" />
+        <activity
+            android:name="com.Jhinmugen.vspan.beproductive.UsageStatistics"
+            android:label="Application Usage Statistics"
+            android:parentActivityName="com.Jhinmugen.vspan.beproductive.MainActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.Jhinmugen.vspan.beproductive.MainActivity" />
+        </activity>
+        <activity
+            android:name="com.Jhinmugen.vspan.beproductive.ActivitySaveToDo"
+            android:label="New Task"
+            android:parentActivityName="com.Jhinmugen.vspan.beproductive.ActivityToDo"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.Jhinmugen.vspan.beproductive.ActivityToDo" />
+        </activity>
+        <activity
+            android:name="com.Jhinmugen.vspan.beproductive.ActivityMoreStatistics"
+            android:label="App Statistics"
+            android:parentActivityName="com.Jhinmugen.vspan.beproductive.UsageStatistics"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.Jhinmugen.vspan.beproductive.UsageStatistics" />
+        </activity>
+        <activity
+            android:name="com.Jhinmugen.vspan.beproductive.ActivityTips"
+            android:label="@string/title_activity_tips"
+            android:parentActivityName="com.Jhinmugen.vspan.beproductive.MainActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.Jhinmugen.vspan.beproductive.MainActivity" />
+        </activity>
+        <receiver android:name="com.Jhinmugen.vspan.beproductive.AlarmReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+            </intent-filter>
+        </receiver>
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
+    </application>
+
+</manifest>

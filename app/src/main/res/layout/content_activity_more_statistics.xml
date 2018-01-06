@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.example.vspan.beproductive.com.Jhinmugen.vspan.beproductive.ActivityMoreStatistics"
+    tools:showIn="@layout/activity_more_statistics">
+
+    <LinearLayout
+        android:id="@+id/GraphLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+
+        android:layout_weight="1.0"
+        android:orientation="horizontal">
+
+        <com.jjoe64.graphview.GraphView
+            android:id="@+id/graph"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/StatisticsLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+
+        android:layout_weight="1.0"
+        android:scrollIndicators="none"
+        android:scrollbars="horizontal">
+
+        <include layout="@layout/statistics_row" />
+
+    </RelativeLayout>
+
+</LinearLayout>

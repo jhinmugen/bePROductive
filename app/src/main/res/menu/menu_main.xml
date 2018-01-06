@@ -1,0 +1,18 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.example.vspan.beproductive.com.Jhinmugen.vspan.beproductive.MainActivity">
+    <item
+        android:id="@+id/action_turn_off"
+        android:orderInCategory="103"
+        android:title="@string/No_notification" />
+    <item
+        android:id="@+id/action_about"
+        android:icon="@android:drawable/ic_menu_info_details"
+        android:orderInCategory="105"
+        android:title="@string/about"
+        app:showAsAction="ifRoom" />
+    <item
+        android:id="@+id/feedback_button"
+        android:title="@string/feedbackButton" />
+</menu>

@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/layoutSaveTodo"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:scrollIndicators="right"
+    android:scrollbars="vertical"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.Jhinmugen.vspan.beproductive.ActivitySaveToDo"
+    tools:showIn="@layout/activity_save_to_do">
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:id="@+id/buttonSave"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:text="@string/activitySaveButtonSave"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/buttonCancel"
+            app:layout_constraintStart_toStartOf="@+id/textDescription"
+            app:layout_constraintTop_toBottomOf="@+id/urgencySeekBar"
+            tools:text="@string/activitySaveButtonSave" />
+
+        <Button
+            android:id="@+id/buttonCancel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="16dp"
+            android:text="@string/activitySaveButtonCancel"
+            app:layout_constraintBaseline_toBaselineOf="@+id/buttonSave"
+            app:layout_constraintEnd_toEndOf="@+id/textDescription"
+            tools:text="@string/activitySaveButtonCancel" />
+
+        <TextView
+            android:id="@+id/activityTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="16dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:text="@string/activitySaveToDoTitle"
+            android:textAlignment="center"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:text="@string/activitySaveToDoTitle" />
+
+        <TextView
+            android:id="@+id/titleNextTask"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="16dp"
+            android:text="@string/titleNewTask"
+            app:layout_constraintBaseline_toBaselineOf="@+id/textTask"
+            app:layout_constraintEnd_toStartOf="@+id/textTask"
+            app:layout_constraintStart_toStartOf="@+id/activityTitle"
+            tools:text="@string/titleNewTask" />
+
+        <TextView
+            android:id="@+id/titleNewDate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/titleNewDate"
+            app:layout_constraintBaseline_toBaselineOf="@+id/textDate"
+            app:layout_constraintStart_toStartOf="@+id/titleNextTask"
+            tools:text="@string/titleNewDate" />
+
+        <TextView
+            android:id="@+id/titleNewTime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/titleNewTime"
+            app:layout_constraintBaseline_toBaselineOf="@+id/textTime"
+            app:layout_constraintStart_toStartOf="@+id/titleNewDate"
+            tools:text="@string/titleNewTime" />
+
+        <TextView
+            android:id="@+id/titleNewDescription"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="16dp"
+            android:text="@string/saveToDoDescription"
+            app:layout_constraintBaseline_toBaselineOf="@+id/textDescription"
+            app:layout_constraintEnd_toStartOf="@+id/textDescription"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="@+id/titleNewTime" />
+
+        <EditText
+            android:id="@+id/textTask"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:layout_marginTop="16dp"
+            android:ems="10"
+            android:inputType="text"
+            android:selectAllOnFocus="false"
+            app:layout_constraintEnd_toEndOf="@+id/activityTitle"
+            app:layout_constraintTop_toBottomOf="@+id/activityTitle"
+            tools:text="@string/textNewTask" />
+
+        <EditText
+            android:id="@+id/textDate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:ems="10"
+            android:focusable="false"
+            android:inputType="textPersonName|date"
+            app:layout_constraintEnd_toEndOf="@+id/textTask"
+            app:layout_constraintTop_toBottomOf="@+id/textTask"
+            tools:text="@string/textNewDate" />
+
+        <EditText
+            android:id="@+id/textTime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:ems="10"
+            android:focusable="false"
+            android:inputType="textPersonName|time"
+            app:layout_constraintEnd_toEndOf="@+id/textDate"
+            app:layout_constraintTop_toBottomOf="@+id/textDate"
+            tools:text="@string/textNewTime" />
+
+        <EditText
+            android:id="@+id/textDescription"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:ems="10"
+            android:inputType="textUri"
+            app:layout_constraintEnd_toEndOf="@+id/textTime"
+            app:layout_constraintTop_toBottomOf="@+id/textTime"
+            tools:text="@string/saveToDoDescriptionContent" />
+
+        <SeekBar
+            android:id="@+id/urgencySeekBar"
+            style="@style/Widget.AppCompat.SeekBar.Discrete"
+            android:layout_width="198dp"
+            android:layout_height="12dp"
+            android:layout_marginTop="16dp"
+            android:max="4"
+            android:progress="0"
+            app:layout_constraintEnd_toEndOf="@+id/progressSeekBar"
+            app:layout_constraintStart_toStartOf="@+id/progressSeekBar"
+            app:layout_constraintTop_toBottomOf="@+id/progressSeekBar" />
+
+        <TextView
+            android:id="@+id/progressSeekBar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            app:layout_constraintEnd_toEndOf="@+id/textDescription"
+            app:layout_constraintStart_toStartOf="@+id/textDescription"
+            app:layout_constraintTop_toBottomOf="@+id/textDescription"
+            tools:text="TextView" />
+
+
+    </android.support.constraint.ConstraintLayout>
+
+</ScrollView>

@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/layout_about"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.vspan.beproductive.com.Jhinmugen.vspan.beproductive.AboutActivity">
+
+    <TextView
+        android:id="@+id/about_intro"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:fontFamily="@font/roboto"
+        android:text="@string/aboutIntro"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/developerMail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:fontFamily="@font/roboto"
+        android:text="@string/developerMeansToCommunicate"
+        android:textAlignment="center"
+        app:layout_constraintEnd_toEndOf="@+id/about_intro"
+        app:layout_constraintStart_toStartOf="@+id/about_intro"
+        app:layout_constraintTop_toBottomOf="@+id/about_intro" />
+
+    <TextView
+        android:id="@+id/credits"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:fontFamily="@font/roboto"
+        android:text="@string/creditsAbout"
+        android:textAlignment="center"
+        app:layout_constraintEnd_toEndOf="@+id/developerMail"
+        app:layout_constraintStart_toStartOf="@+id/developerMail"
+        app:layout_constraintTop_toBottomOf="@+id/developerMail" />
+
+    <TextView
+        android:id="@+id/graphViewAbout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:fontFamily="@font/roboto"
+        android:text="@string/graphViewTitleAbout"
+        android:textAllCaps="true"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/credits"
+        app:layout_constraintStart_toStartOf="@+id/credits"
+        app:layout_constraintTop_toBottomOf="@+id/credits" />
+
+    <TextView
+        android:id="@+id/graphViewLinkAbout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:autoLink="web"
+        android:text="@string/graphViewLinkAbout"
+        android:textColorLink="#1976d2"
+        app:layout_constraintEnd_toEndOf="@+id/graphViewAbout"
+        app:layout_constraintStart_toStartOf="@+id/graphViewAbout"
+        app:layout_constraintTop_toBottomOf="@+id/graphViewAbout" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:layout_marginTop="16dp"
+        android:fontFamily="@font/roboto"
+        android:text="@string/graphViewTermsOfUse"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/graphViewLinkAbout"
+        app:layout_constraintStart_toStartOf="@+id/graphViewLinkAbout"
+        app:layout_constraintTop_toBottomOf="@+id/graphViewLinkAbout" />
+
+</android.support.constraint.ConstraintLayout>

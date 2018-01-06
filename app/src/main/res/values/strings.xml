@@ -1,0 +1,84 @@
+<resources>
+    <string name="app_name">Be PROductive</string>
+    <string name="action_settings">Settings</string>
+    <string name="time_usage">App Usage Tool \n Track the time you spend on your phone</string>
+    <string name="todo">To Do List \n Create your own Todo List</string>
+    <string name="tips">Tips \n Learn from the gurus of productivity</string>
+    <string name="No_notification">Alarms Off</string>
+    <string name="counter_res">Working intervals \n Create your own unique time working intervals</string>
+    <string name="about">About</string>
+    <string name="title_activity_to_do">ActivityToDo</string>
+    <string name="title">Hello</string>
+    <string name="buttonDelete">Done</string>
+    <string name="todo_add">Add Task</string>
+    <string name="hint_minute">Minutes</string>
+    <string name="message_minutes">Please Enter Minutes...</string>
+    <string name="title_activity_time_usage">TimeUsage</string>
+    <string name="app_usage_settings">Open App Usage Settings</string>
+    <string name="usage_time_time_span">Time Span</string>
+    <string name="open_app_usage_setting">Open Apps with usage access settings</string>
+    <string name="last_time_used">"Last time used: "</string>
+    <string name="time_span">"Time span: "</string>
+    <string name="explanation_access_to_appusage_is_not_enabled">Failed to retrieve app usage
+        statistics. You may need to enable access
+        for this app through Settings > Security > Apps with usage access
+    </string>
+    <string name="activitySaveToDoTitle">What Do You Want To Do Next?</string>
+    <string name="textNewTask">New Task</string>
+    <string name="textNewDate">New Date</string>
+    <string name="textNewTime">New Time</string>
+    <string name="titleNewTask">Task</string>
+    <string name="titleNewDate">Date</string>
+    <string name="titleNewTime">Time</string>
+    <string name="activitySaveButtonSave">Save</string>
+    <string name="activitySaveButtonCancel">Cancel</string>
+    <string name="datetime_widget_todo">DateTime</string>
+    <string name="usageRowIcon">The app of the icon</string>
+    <string name="usageRowTimeUsed">Time Used:</string>
+    <string name="buttonModify">Change</string>
+    <string name="itemToDoDescription">Description of Task</string>
+    <string name="saveToDoDescription">Description</string>
+    <string name="saveToDoDescriptionContent">Description</string>
+    <string name="usage_row_text_view_time_used">HH:MM:SS</string>
+    <string name="title_activity_more_statistics">ActivityMoreStatistics</string>
+    <string name="title_activity_tips">Tips</string>
+    <string name="tips_first_tip">Using the most time of your morning can boost your productivity a lot. Think of waking up at 6 a.m. or earlier and of course sleep early your body needs all the energy you can provide it.
+                                    Turn off all your electronic devices 90 minutes before you go to bed.</string>
+    <string name="tips_second_tip">After waking up you should have a routine that you follow everyday. Don\'t hit the snooze button and stay offline for as long as you can. Do not forget your morning exercise and do not forget
+                                    to socialize with the rest of your family members</string>
+    <string name="tips_third_tip">Once you reach the office start with your most important task it may be tempting to do mindless work but it delays the rest of your important tasks. Also try to avoid chat responses or calls that may distract you from your work</string>
+    <string name="tips_fourth_tip">If you want to boost your productivity levels you should really pay attention to your diet. Never neglect your breakfast and avoid lunch that may
+                                    contain sugary foods or heavy calorie-ridden foods like burgers or fries. They may make you feel sleepy, weak and slow at work instead salads, almonds and salads will provide you the necessary energy that your body needs while staying healthy</string>
+    <string name="tips_fifth_tip">Regular exercise can make a huge change on your productivity. Studies have shown that 30–60 minutes of exercise can boost your time management, your mental performance and the ability to meet deadlines</string>
+    <string name="tips_sixth_tip">Review your progress each day and find ways to improve. The most productive people out there are those who are honest about what they\'re doing well and where they need to do better.</string>
+    <string name="tips_seventh_tip">Stop your multitasking habit. Several studies have shown that people who multitask take 50% more time to complete a single task and make 50% more errors. Apparently 40% of our time
+                                    when trying to multitask is wasted on switching between tasks</string>
+    <string name="tips_eight_tip">Last but no least take BREAKS! Take breaks through the year as well during your work. Our brain need time to rest and recharge. A recharged brain is re-energized and more creative that leads to productivity
+                                    Our recommendation? Use working intervals while at work and make full use of your vacation, disconnecting fully from work.</string>
+    <string name="leastUsedLabel">Least used app</string>
+    <string name="mostUsedLabel">Most used app</string>
+    <string name="totalTimeSpentOnPhoneLabel">Time Spent on Phone</string>
+    <string name="timeSpentonApp">Time spent on App</string>
+    <string name="totalPercentLabel">Percentage of time \n spent on phone</string>
+    <string name="percentageUsageCurrentAppLabel">Percentage of time \n spent on current \n app</string>
+    <string name="todoSwitchNotification">Notification</string>
+    <string name="tasksLeftLabelMain">You have :</string>
+    <string name="LabelTasksCompleted">You have completed :</string>
+    <string name="feedbackButton">Feedback</string>
+    <string name="aboutIntro">Welcome To Be PROductive</string>
+    <string name="developerMeansToCommunicate">You can communicate with us using our feedback button at the Settings menu or at: \n beproductivefeedback@gmail.com</string>
+    <string name="creditsAbout">All credits for the icons and images go to: \nSmashicons from www.flaticon.com \nFreepik from www.flaticon.com</string>
+    <string name="edit_text_minute">25</string>
+    <string name="edit_text_view_time_counter">00:25:00</string>
+    <string name="alarm_switch">Alarm</string>
+    <string name="image_view_reset">Reset</string>
+    <string name="image_view_start_stop">Start/Stop</string>
+    <string name="alarm_switch_land">Alarm</string>
+    <string name="image_edit">Edit</string>
+    <string name="image_notification">Notification</string>
+    <string name="graphViewTitleAbout">GraphView</string>
+    <string name="graphViewLinkAbout">https://github.com/appsthatmatter/GraphView</string>
+    <string name="graphViewTermsOfUse">Copyright 2016 Jonas Gehring  Licensed under the Apache License, Version 2.0 (the \"License\"); you may not use this file except in compliance with the License. You may obtain a copy of the License at \n  \n   http://www.apache.org/licenses/LICENSE-2.0 \n \n Unless required by applicable law or agreed to in writing, software distributed under the License is distributed on an \"AS IS\" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the License for the specific language governing permissions and limitations under the License.   Apache License  Version 2.0, January 2004</string>
+
+
+</resources>
