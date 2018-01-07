@@ -12,12 +12,14 @@ import android.content.pm.PackageManager;
 import android.database.sqlite.SQLiteDatabase;
 import android.graphics.Color;
 import android.support.annotation.NonNull;
+import android.text.Layout;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ArrayAdapter;
 import android.widget.CheckBox;
 import android.widget.ImageView;
+import android.widget.LinearLayout;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -71,6 +73,7 @@ public class CustomListAdapter extends ArrayAdapter<String> {
             mHolder.done = (CheckBox) view.findViewById(R.id.toDolist_checkBox);
             mHolder.edit = (ImageView) view.findViewById(R.id.imageEdit);
             mHolder.notify = (ImageView) view.findViewById(R.id.imageNotification);
+            mHolder.backgroundColor = (LinearLayout) view.findViewById(R.id.checkboxLayout);
             view.setTag(mHolder);
         } else {
             mHolder = (ViewHolder) view.getTag();
@@ -80,22 +83,22 @@ public class CustomListAdapter extends ArrayAdapter<String> {
         mHolder.description.setText(descriptions.get(position));
         switch (urgency.get(position)) {
             case 0:
-                mHolder.task.setBackgroundColor(Color.BLUE);
+                mHolder.backgroundColor.setBackgroundColor(Color.BLUE);
                 break;
             case 1:
-                mHolder.task.setBackgroundColor(Color.CYAN);
+                mHolder.backgroundColor.setBackgroundColor(Color.CYAN);
                 break;
             case 2:
-                mHolder.task.setBackgroundColor(Color.GREEN);
+                mHolder.backgroundColor.setBackgroundColor(Color.GREEN);
                 break;
             case 3:
-                mHolder.task.setBackgroundColor(Color.YELLOW);
+                mHolder.backgroundColor.setBackgroundColor(Color.YELLOW);
                 break;
             case 4:
-                mHolder.task.setBackgroundColor(Color.RED);
+                mHolder.backgroundColor.setBackgroundColor(Color.RED);
                 break;
             default:
-                mHolder.task.setBackgroundColor(Color.BLUE);
+                mHolder.backgroundColor.setBackgroundColor(Color.BLUE);
         }
         mHolder.done.setTag(position);
         mHolder.done.setOnClickListener(new View.OnClickListener() {
@@ -199,6 +202,7 @@ public class CustomListAdapter extends ArrayAdapter<String> {
         private CheckBox done;
         private ImageView edit;
         private ImageView notify;
+        private LinearLayout backgroundColor;
 
     }
 
